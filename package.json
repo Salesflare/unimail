@@ -1,0 +1,20 @@
+{
+  "name": "@salesflare/unimail",
+  "version": "1.0.0",
+  "description": "A unified API for mail access",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salesflare/unimail"
+  },
+  "author": "Salesflare Team",
+  "dependencies": {
+    "batchelor": "^2.0.2",
+    "date-fns": "1.29.0",
+    "google-auth-library": "^0.12.0",
+    "googleapis": "^23.0.0",
+    "wreck": "^14.0.2"
+  }
+}
