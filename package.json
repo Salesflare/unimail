@@ -4,7 +4,7 @@
   "description": "A unified API for mail access",
   "license": "MIT",
   "main": "index.js",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/Salesflare/unimail"
