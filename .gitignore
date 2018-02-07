@@ -59,4 +59,7 @@ typings/
 
 # Test script
 testing.js
+# test files with possible sensitive information
+test/
+.vscode/
 
