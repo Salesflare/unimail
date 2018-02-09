@@ -1,6 +1,6 @@
 {
   "name": "@salesflare/unimail",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A unified API for mail access",
   "license": "MIT",
   "main": "lib/index.js",
@@ -13,7 +13,6 @@
   "dependencies": {
     "batchelor": "^2.0.2",
     "boom": "^7.1.1",
-    "date-fns": "1.29.0",
     "google-auth-library": "^0.12.0",
     "googleapis": "^23.0.0",
     "wreck": "^14.0.2"
