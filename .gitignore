@@ -60,3 +60,6 @@ typings/
 # Test script
 testing.js
 
+
+.idea
+example
