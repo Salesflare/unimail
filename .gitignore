@@ -63,3 +63,6 @@ testing.js
 test/
 .vscode/
 
+
+.idea
+example
