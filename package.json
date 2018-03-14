@@ -10,6 +10,14 @@
     "url": "https://github.com/Salesflare/unimail"
   },
   "author": "Salesflare Team",
+  "scripts": {
+    "lint": "eslint lib --fix",
+    "test": "npm run lint",
+    "prepublish": "npm test"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.0.0",
     "async": "^2.6.0",
@@ -21,5 +29,11 @@
     "nylas": "^4.2.1",
     "simple-oauth2": "1.5.0",
     "wreck": "^14.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-plugin-new-with-error": "^1.1.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-unicorn": "^4.0.2"
   }
 }
