@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     "env": {
         "es6": true,
@@ -271,7 +273,10 @@ module.exports = {
         "space-infix-ops": "off",
         "space-unary-ops": "error",
         "spaced-comment": "off",
-        "strict": "off",
+        "strict": [
+            "error",
+            "global"
+        ],
         "switch-colon-spacing": "error",
         "symbol-description": "error",
         "template-curly-spacing": [
