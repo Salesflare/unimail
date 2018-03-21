@@ -3,3 +3,4 @@ testing.js
 migrations
 !.eslintrc.js
 example
+test/
