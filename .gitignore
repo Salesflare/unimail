@@ -63,6 +63,7 @@ testing.js
 test/
 .vscode/
 
-
 .idea
 example
+
+package-lock.json
