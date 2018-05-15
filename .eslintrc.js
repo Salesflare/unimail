@@ -94,7 +94,14 @@ module.exports = {
             "error",
             "beside"
         ],
-        "indent": "off",
+        "indent": [
+            'error',
+            4,
+            {
+                'SwitchCase': 1,
+                'MemberExpression': 1
+            }
+        ],
         "indent-legacy": "off",
         "init-declarations": "error",
         "jsx-quotes": "error",
@@ -119,7 +126,7 @@ module.exports = {
         "max-statements": "off",
         "max-statements-per-line": "error",
         "multiline-comment-style": "error",
-        "new-cap": "error",
+        "new-cap": ["error", { "capIsNew": false }],
         "new-parens": "error",
         "newline-after-var": "off",
         "newline-before-return": "off",
@@ -164,7 +171,7 @@ module.exports = {
         "no-multi-assign": "error",
         "no-multi-spaces": "error",
         "no-multi-str": "error",
-        "no-multiple-empty-lines": "error",
+        "no-multiple-empty-lines": ["error", { max: 2, maxEOF: 1, maxBOF: 0 }],
         "no-native-reassign": "error",
         "no-negated-condition": "error",
         "no-negated-in-lhs": "error",
@@ -205,7 +212,7 @@ module.exports = {
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
         "no-throw-literal": "error",
-        "no-trailing-spaces": "off",
+        "no-trailing-spaces": "error",
         "no-undef-init": "error",
         "no-undefined": "off",
         "no-unmodified-loop-condition": "error",
@@ -255,7 +262,7 @@ module.exports = {
         "require-await": "error",
         "require-jsdoc": "error",
         "rest-spread-spacing": "error",
-        "semi": "off",
+        "semi": "error",
         "semi-spacing": "off",
         "semi-style": [
             "error",
