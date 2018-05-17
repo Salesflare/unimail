@@ -86,7 +86,7 @@ module.exports = {
         "getter-return": "error",
         "global-require": "error",
         "guard-for-in": "error",
-        "handle-callback-err": "off",
+        "handle-callback-err": "error",
         "id-blacklist": "error",
         "id-length": "off",
         "id-match": "error",
