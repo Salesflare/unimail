@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.0.0",
-    "async": "^2.6.0",
+    "async": "^2.6.1",
     "batchelor": "^2.0.2",
     "boom": "^7.2.0",
     "google-auth-library": "^0.12.0",
