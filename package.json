@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.0.0",
+    "@salesflare/nylas": "^4.3.0",
     "async": "^2.6.1",
     "batchelor": "^2.0.2",
     "boom": "^7.2.0",
@@ -27,7 +28,6 @@
     "googleapis": "^23.0.2",
     "lodash": "^4.17.10",
     "mailparser": "^2.2.0",
-    "nylas": "^4.2.2",
     "simple-oauth2": "1.5.0",
     "wreck": "^14.0.2"
   },
