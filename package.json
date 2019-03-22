@@ -19,7 +19,7 @@
     "node": ">=8.10.0"
   },
   "dependencies": {
-    "@microsoft/microsoft-graph-client": "^1.4.0",
+    "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/nylas": "^4.4.0",
     "async": "^2.6.2",
     "batchelor": "^2.0.2",
