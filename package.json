@@ -27,6 +27,7 @@
     "googleapis": "^27.0.0",
     "lodash": "^4.17.11",
     "mailparser": "^2.4.3",
+    "nodemailer": "^6.1.0",
     "simple-oauth2": "1.5.0",
     "wreck": "^14.1.4"
   },
