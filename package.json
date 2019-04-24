@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "eslint": "^5.14.1",
-    "eslint-plugin-new-with-error": "^2.0.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-unicorn": "^7.1.0"
+    "eslint-config-salesflare": "^1.2.1",
+    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint-plugin-node": "^8.0.1"
   }
 }
