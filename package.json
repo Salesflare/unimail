@@ -16,25 +16,25 @@
     "preversion": "npm test"
   },
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=8.16.0"
   },
   "dependencies": {
+    "@hapi/boom": "^7.4.2",
+    "@hapi/wreck": "^15.0.1",
     "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/nylas": "^4.4.0",
-    "async": "^2.6.2",
+    "async": "^3.1.0",
     "batchelor": "^2.0.2",
-    "boom": "^7.3.0",
     "googleapis": "^27.0.0",
     "lodash": "^4.17.11",
-    "mailparser": "^2.4.3",
-    "nodemailer": "^6.1.0",
-    "simple-oauth2": "1.5.0",
-    "wreck": "^14.1.4"
+    "mailparser": "^2.7.1",
+    "nodemailer": "^6.2.1",
+    "simple-oauth2": "1.5.0"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
+    "eslint": "^5.16.0",
     "eslint-config-salesflare": "^1.2.1",
     "eslint-plugin-dependencies": "^2.4.0",
-    "eslint-plugin-node": "^8.0.1"
+    "eslint-plugin-node": "^9.1.0"
   }
 }
