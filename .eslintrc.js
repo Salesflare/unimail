@@ -4,13 +4,12 @@ module.exports = {
     env: {
         node: true
     },
-    plugins: ['node', 'dependencies'],
+    plugins: ['node'],
     extends: ['plugin:node/recommended', 'eslint-config-salesflare'],
     rules: {
         // Taken from server
         'global-require': 'error',
         'handle-callback-err': 'error',
-        'dependencies/no-cycles': 1,
         'node/no-missing-import': 'error',
         'node/no-unpublished-require': ['error'],
         'node/shebang': 'off',

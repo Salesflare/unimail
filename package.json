@@ -32,9 +32,8 @@
     "simple-oauth2": "1.5.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-salesflare": "^1.2.1",
-    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint": "^6.1.0",
+    "eslint-config-salesflare": "^2.0.1",
     "eslint-plugin-node": "^9.1.0"
   }
 }
