@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@hapi/boom": "^8.0.1",
-    "@hapi/wreck": "^15.1.0",
+    "@hapi/wreck": "^17.0.0",
     "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/nylas": "^4.4.0",
     "async": "^3.1.0",
