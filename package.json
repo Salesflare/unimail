@@ -19,7 +19,7 @@
     "node": ">=8.16.0"
   },
   "dependencies": {
-    "@hapi/boom": "^8.0.1",
+    "@hapi/boom": "^9.0.0",
     "@hapi/wreck": "^15.1.0",
     "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/nylas": "^4.4.0",
