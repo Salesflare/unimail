@@ -25,7 +25,7 @@
     "@salesflare/nylas": "^4.4.0",
     "async": "^3.2.0",
     "batchelor": "^2.0.2",
-    "googleapis": "^52.1.0",
+    "googleapis": "^58.0.0",
     "lodash": "^4.17.19",
     "mailparser": "^2.7.7",
     "nodemailer": "^6.4.10",
