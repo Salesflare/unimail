@@ -27,7 +27,7 @@
     "batchelor": "^2.0.2",
     "googleapis": "^52.1.0",
     "lodash": "^4.17.19",
-    "mailparser": "^2.7.7",
+    "mailparser": "^3.0.0",
     "nodemailer": "^6.4.10",
     "simple-oauth2": "1.5.0"
   },
