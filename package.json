@@ -1,6 +1,6 @@
 {
   "name": "@salesflare/unimail",
-  "version": "2.11.1",
+  "version": "2.14.2",
   "description": "A unified API for mail access",
   "license": "MIT",
   "main": "lib/index.js",
@@ -25,15 +25,15 @@
     "@salesflare/nylas": "^4.4.0",
     "async": "^3.2.0",
     "batchelor": "^2.0.2",
-    "googleapis": "^52.1.0",
-    "lodash": "^4.17.19",
-    "mailparser": "^2.7.7",
-    "nodemailer": "^6.4.10",
+    "googleapis": "^62.0.0",
+    "lodash": "^4.17.20",
+    "mailparser": "^3.0.0",
+    "nodemailer": "^6.4.14",
     "simple-oauth2": "1.5.0"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-salesflare": "^4.1.4",
+    "eslint": "^7.12.1",
+    "eslint-config-salesflare": "^4.3.0",
     "eslint-plugin-node": "^11.1.0"
   }
 }
