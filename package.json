@@ -19,21 +19,21 @@
     "node": ">=12.18.0"
   },
   "dependencies": {
-    "@hapi/boom": "^9.1.0",
-    "@hapi/wreck": "^17.0.0",
+    "@hapi/boom": "^9.1.1",
+    "@hapi/wreck": "^17.1.0",
     "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/nylas": "^4.4.0",
     "async": "^3.2.0",
     "batchelor": "^2.0.2",
-    "googleapis": "^65.0.0",
+    "googleapis": "^67.1.0",
     "lodash": "^4.17.20",
-    "mailparser": "^3.0.0",
-    "nodemailer": "^6.4.16",
+    "mailparser": "^3.1.0",
+    "nodemailer": "^6.4.18",
     "simple-oauth2": "1.5.0"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-salesflare": "^4.3.0",
+    "eslint": "^7.20.0",
+    "eslint-config-salesflare": "^4.5.0",
     "eslint-plugin-node": "^11.1.0"
   }
 }
