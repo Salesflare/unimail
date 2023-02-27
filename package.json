@@ -24,7 +24,7 @@
     "@hapi/wreck": "^17.1.0",
     "@microsoft/microsoft-graph-client": "1.4.0",
     "@salesflare/batchelor": "^2.0.4",
-    "@salesflare/nylas": "^4.4.0",
+    "@salesflare/nylas": "^4.4.2",
     "async": "^3.2.2",
     "lodash": "^4.17.21",
     "mailparser": "^3.4.0",
