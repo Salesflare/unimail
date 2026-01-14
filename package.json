@@ -1,6 +1,6 @@
 {
   "name": "@salesflare/unimail",
-  "version": "3.0.17",
+  "version": "3.0.18",
   "description": "A unified API for mail access",
   "license": "MIT",
   "main": "lib/index.js",
