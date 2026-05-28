@@ -2,5 +2,5 @@ node_modules
 testing.js
 migrations
 !.eslintrc.js
-example
 test/
+example/public

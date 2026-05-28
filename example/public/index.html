@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimail viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="settings">
+        <div class="settings-row">
+            <label>
+                Connector
+                <select id="connector"></select>
+            </label>
+            <label class="grow">
+                Access token
+                <input id="access_token" type="text" autocomplete="off" spellcheck="false">
+            </label>
+        </div>
+        <div class="settings-row">
+            <label class="grow">
+                Refresh token
+                <input id="refresh_token" type="text" autocomplete="off" spellcheck="false">
+            </label>
+            <label>
+                Expires at
+                <input id="expiration_date" type="text" placeholder="ISO 8601 or empty" autocomplete="off" spellcheck="false">
+            </label>
+            <button id="save">Save</button>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+    </header>
+
+    <main class="layout">
+        <aside class="pane folders">
+            <h2>Folders</h2>
+            <ul id="folders" class="list"></ul>
+        </aside>
+
+        <section class="pane messages">
+            <h2 id="messages-title">Messages</h2>
+            <details class="filters" id="filters">
+                <summary>
+                    <span>Filters</span>
+                    <span id="filters-active" class="filters-active" hidden></span>
+                </summary>
+                <div class="filter-form">
+                    <label>
+                        Subject contains
+                        <input type="text" id="filter-subject" autocomplete="off">
+                    </label>
+                    <div class="filter-row">
+                        <label>
+                            From
+                            <input type="date" id="filter-after">
+                        </label>
+                        <label>
+                            To
+                            <input type="date" id="filter-before">
+                        </label>
+                    </div>
+                    <label>
+                        Participants (one email per line)
+                        <textarea id="filter-participants" rows="3" autocomplete="off" spellcheck="false"></textarea>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" id="filter-include-drafts">
+                        Include drafts
+                    </label>
+                    <div class="filter-actions">
+                        <button id="filter-apply">Apply</button>
+                        <button id="filter-clear" type="button" class="secondary">Clear</button>
+                    </div>
+                </div>
+            </details>
+            <div id="messages-banner" class="banner" hidden></div>
+            <ul id="messages" class="list"></ul>
+            <div class="pagination">
+                <button id="load-more" hidden>Load more</button>
+            </div>
+        </section>
+
+        <section class="pane detail">
+            <div class="detail-header">
+                <h2 id="detail-subject">Select a message</h2>
+                <button id="show-raw" class="icon-btn" type="button" title="Show raw message" hidden aria-label="Show raw message">
+                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+                        <path d="M6.146 4.146a.5.5 0 0 1 .708.708L3.207 8.5l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4Zm3.708 0a.5.5 0 0 0-.708.708L12.793 8.5l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4Z"/>
+                    </svg>
+                </button>
+            </div>
+            <dl id="detail-meta" class="meta"></dl>
+            <div id="detail-body" class="body"></div>
+            <div id="detail-files" class="files"></div>
+        </section>
+    </main>
+
+    <dialog id="raw-dialog" class="raw-dialog" aria-labelledby="raw-dialog-title">
+        <header class="raw-dialog-header">
+            <h3 id="raw-dialog-title">Raw message</h3>
+            <button id="raw-close" class="icon-btn" type="button" title="Close" aria-label="Close">
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path d="M3.146 3.146a.5.5 0 0 1 .708 0L8 7.293l4.146-4.147a.5.5 0 1 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708L7.293 8 3.146 3.854a.5.5 0 0 1 0-.708Z"/>
+                </svg>
+            </button>
+        </header>
+        <pre id="raw-content" class="raw-content"></pre>
+    </dialog>
+
+    <script src="app.js"></script>
+</body>
+</html>
