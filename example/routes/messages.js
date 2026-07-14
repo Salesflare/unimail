@@ -49,6 +49,18 @@ const list = (internals) => {
             }
         }
 
+        if (query.keywords) {
+            const raw = Array.isArray(query.keywords) ? query.keywords : [query.keywords];
+            const keywords = raw
+                .flatMap((k) => String(k).split(/[\n,]/))
+                .map((s) => s.trim())
+                .filter(Boolean);
+
+            if (keywords.length > 0) {
+                params.keywords = keywords;
+            }
+        }
+
         if (query.includeDrafts !== undefined) {
             params.includeDrafts = query.includeDrafts === 'true' || query.includeDrafts === true;
         }

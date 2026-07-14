@@ -22,6 +22,7 @@ const els = {
     filters: document.querySelector('#filters'),
     filtersActive: document.querySelector('#filters-active'),
     filterSubject: document.querySelector('#filter-subject'),
+    filterKeywords: document.querySelector('#filter-keywords'),
     filterAfter: document.querySelector('#filter-after'),
     filterBefore: document.querySelector('#filter-before'),
     filterParticipants: document.querySelector('#filter-participants'),
@@ -42,6 +43,7 @@ const state = {
     nextPageToken: null,
     filters: {
         subject: '',
+        keywords: [],
         after: '',
         before: '',
         participants: [],
@@ -439,6 +441,8 @@ async function loadMessages(folderParam, append) {
         query.set('subject', filters.subject);
     }
 
+    filters.keywords.forEach((keyword) => query.append('keywords', keyword));
+
     if (filters.after) {
         query.set('after', filters.after);
     }
@@ -568,8 +572,14 @@ function readFiltersFromInputs() {
         .map((s) => s.trim())
         .filter(Boolean);
 
+    const keywords = els.filterKeywords.value
+        .split(/[\n,]/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+
     return {
         subject: els.filterSubject.value.trim(),
+        keywords,
         after: els.filterAfter.value,
         before: els.filterBefore.value,
         participants,
@@ -581,6 +591,10 @@ function countActiveFilters(filters) {
 
     let count = 0;
     if (filters.subject) {
+        count++;
+    }
+
+    if (filters.keywords.length > 0) {
         count++;
     }
 
@@ -619,6 +633,7 @@ function updateFiltersBadge() {
 function resetFilterInputs() {
 
     els.filterSubject.value = '';
+    els.filterKeywords.value = '';
     els.filterAfter.value = '';
     els.filterBefore.value = '';
     els.filterParticipants.value = '';
